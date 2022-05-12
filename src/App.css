@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f1eded;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+h1 {
+  padding: 10px;
+  background-color: rgb(183, 50, 50);
+  text-align: center;
+  color: whitesmoke;
+  font-size: 2.2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  border-bottom: 10px solid rgb(157, 156, 156);
+}
+
+.pokecard {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  min-width: 150px;
+  font-size: 1.1em;
+
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  align-items: stretch;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(227, 222, 222);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.pokecard:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-out;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name::before {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #160575;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.name {
+  color: #160575;
+  margin: 5px 0px;
+  width: 180px;
+  text-transform: uppercase;
+}
+
+.name::after {
+  content: '';
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background: #160575;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+
+.weight {
+  width: 100px;
+  color: rgb(91, 60, 153);
+  padding: 4px;
+}
+
+.pokeIMG {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.type {
+  background-color: rgb(170, 172, 171);
+  color: white;
+  border-radius: 8px;
+  width: 60px;
+  margin: 0 auto;
+  padding: 3px 8px;
+}
